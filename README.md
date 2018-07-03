@@ -3,4 +3,4 @@
 Creadores Facundo Luzuriaga y Francisco Galmes
 ----------------------------------------------
 
-[Ver pagina web] **(https://UCC-LabCompu2.github.io/proyecto2018-luzuriaga-galmes-lab-compu-ii/index.html)**
+[Ver pagina web] **(https://UCC-LabCompu2.github.io/pruebafinal/index.html)**
