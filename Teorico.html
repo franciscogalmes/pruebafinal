@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teoria del calculo</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="imagenes/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imagenes/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imagenes/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imagenes/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imagenes/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imagenes/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imagenes/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imagenes/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imagenes/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imagenes/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="functions.js"></script>
+
+</head>
+<body>
+<div>
+    <h3>Fuerza de rozamiento:</h3>
+    <p>Si un coche que circula por una carretera horizontal se deja en “punto muerto” (el motor, en este caso, no ejerce fuerza alguna sobre él) debería (según la ley de inercia de newton) seguir con movimiento rectilíneo y uniforme; sin embargo la experiencia demuestra que termina parándose. ¿Por qué? Pues obviamente porque existe siempre una fuerza que se opone al movimiento y por eso la situación que modela la mencionada ley no puede ser real en nuestro mundo. Es la llamada fuerza de rozamiento. Fuerza de rozamiento es toda fuerza opuesta al movimiento, la cual se manifiesta en la superficie de contacto de dos cuerpos siempre que uno de ellos se mueva o tienda a moverse sobre otro.
+    </p>
+    <h4>Coeficiente de rozamiento:</h4>
+    <p>El rozamiento es independiente de la velocidad y del valor de la superficie de los cuerpos en contacto. Esta fuerza depende de la naturaleza de los cuerpos en contacto y del grado de pulimento de sus superficies. Es proporcional a la fuerza que actúa sobre el móvil perpendicularmente al plano de movimiento. A ésta última se la denomina fuerza normal (N).
+    </p>
+    <div id="formula22">
+        <p><b>Fr= µ·N</b></p>
+    </div>
+    <div id="tabla">
+        <table  border="1px">
+            <thead>
+            <tr>
+                <td>Velocidad/Material</td>
+                <td>menos de 50 Km/h</td>
+                <td>mas de 50 Km/h</td>
+            </tr></thead>
+            <tbody><tr>
+                <td>Asfalto</td>
+                <td>0.70</td>
+                <td>0.63</td>
+            </tr>
+            <tr>
+                <td>Cemento</td>
+                <td>0.70</td>
+                <td>0.67</td>
+            </tr>
+            <tr>
+                <td>Tierra</td>
+                <td>0.65</td>
+                <td>0.65</td>
+            </tr>
+            <tr>
+                <td>Nieve</td>
+                <td>0.17</td>
+                <td>0.15</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="distancias">
+        <p>Hay que tener en cuenta que tambien hay una distancia producido por el tiempo que la persona tarda en reaccionar y tocar el pedal al darse cuenta que tiene que frenar. Esta distancia se calcula como D=velocidad inicial x tiempo de reaccion. En promedio tardamaos 0.2 sesgundo en reaccionar. Por otro lado esta la distancia que frena el auto y que varia segun la velocidad. Esta distancia se calcula con la formula D=velocidad inicial al cuadrado sobre 2 x gravedad x el coeficiente de rozamiento. Esta formula se obtiene apartir del trabajo = a la diferencia de energia cinetica. La distancia total es la suma de las dos distancias.</p>
+    </div>
+</div>
+<div id="vuelta2" >
+    <a href="index.html" >Volver a calcular la distancia mínima de frenado</a>
+</div>
+</body>
+</html>

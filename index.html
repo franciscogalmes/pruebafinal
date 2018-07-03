@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Trabajo Practico Laboratorio de computacion 2</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="imagenes/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imagenes/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imagenes/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imagenes/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imagenes/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imagenes/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imagenes/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imagenes/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imagenes/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imagenes/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="functions.js"></script>
+</head>
+
+
+<body>
+
+<header>
+    <h1>
+        <b>
+            Distancia mínima de frenado
+        </b>
+    </h1>
+
+</header>
+<section>
+<div class="Titulo">
+    <h2>
+        Este sitio tiene como objetivo ayudar a los conductores, las rutas de nuestro pais estan cada vez más inseguras y queremos prevenir todo tipo de choque. Para ello creamos un programa que calcula la distancia minima a la que debemos frenar para evitar la colision.
+    </h2>
+</div>
+<div class="formulario1">
+    <form class="formulario" name="formulario" >
+        <p>Para comenzar escoja su vehiculo</p>
+        <select name="Vehículo" id="vehiculo">
+            <option value="Auto">Auto</option>
+            <option value="Moto">Moto</option>
+            <option value="Camion">Camion</option>
+            <option value="Colectivo">Colectivo</option>
+            <option value="Camioneta">Camioneta</option>
+            <option value="Traffic">Traffic</option>
+        </select>
+
+        <p>¿En que tipo de ruta esta manejando?</p>
+        <input type="radio" name="ruta" value="Asfalto" id="Asfalto" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')">Asfalto
+        <input type="radio" name="ruta" value="Cemento" id="Cemento" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')"> Cemento
+        <input type="radio" name="ruta" value="Tierra" id="Tierra" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')"> Tierra
+        <input type="radio" name="ruta" value="Nieve" id="Nieve" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')"> Nieve
+        <p>¿A qué velocidad viene?</p>
+        <input type="number" id="velocidad" name="velocidad" min="0" max="300" step="1" value="100" onselect="alert('Ingrese velocidad')">
+        <select name="Unidad" id="unidad">
+            <option value="Km/h" id="Km/h">Km/h</option>
+            <option value="m/s" id="m/s">m/s</option>
+        </select>
+    </form>
+</div>
+
+
+<div class="Resultados">
+    <button id="boton" onclick="calculardistancia()">
+        Resultados</button>
+</div>
+<div class="alerta">
+    <button id="boton2" onclick="alert(velocidadunidad())">
+        ¿Cuanto seria en metros por segundo?</button>
+</div>
+
+
+<div class="gif">
+    <img id="gif"src="imagenes/choque.gif">
+</div>
+</section>
+<footer>
+    Autores Facundo Luzuriaga y Francisco Galmes
+</footer>
+
+
+</body>
+
+</html>
